@@ -15,7 +15,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 
 PATH_TO_FROZEN_GRAPH = 'inference_graph/frozen_inference_graph.pb'
-PATH_TO_LABELS = 'data/labelmap.pbtxt'
+PATH_TO_LABELS = 'treinando/labelmap.pbtxt'
 NUM_CLASSES = 37
 
 # Load a (frozen) Tensorflow model into memory.
