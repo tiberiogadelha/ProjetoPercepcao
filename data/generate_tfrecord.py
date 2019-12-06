@@ -1,12 +1,3 @@
-"""
-Usage:
-  # In local folder
-  # Create train data:
-  python generate_tfrecord.py --csv_input=CSGO_images\train_labels.csv --image_dir=CSGO_images\train --output_path=CSGO_images\train.record
-
-  # Create test data:
-  python generate_tfrecord.py --csv_input=CSGO_images\test_labels.csv --image_dir=CSGO_images\test --output_path=CSGO_images\test.record
-"""
 from __future__ import division
 from __future__ import print_function
 from __future__ import absolute_import
@@ -26,8 +17,6 @@ flags.DEFINE_string('image_dir', '', 'Path to the image directory')
 flags.DEFINE_string('output_path', '', 'Path to output TFRecord')
 FLAGS = flags.FLAGS
 
-
-# TO-DO replace this with label map
 def class_text_to_int(row_label):
     if row_label == 'a':
         return 1
